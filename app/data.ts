@@ -2,10 +2,10 @@
 // 🛑 Nothing in here has anything to do with Remix, it's just a fake database
 ////////////////////////////////////////////////////////////////////////////////
 
-import { matchSorter } from "match-sorter";
+import {matchSorter} from 'match-sorter'
 // @ts-ignore - no types, but it's a tiny function
-import sortBy from "sort-by";
-import invariant from "tiny-invariant";
+import sortBy        from 'sort-by'
+import invariant     from 'tiny-invariant'
 
 type ContactMutation = {
   id?: string;
@@ -74,8 +74,7 @@ export async function getContacts(query?: string | null) {
 }
 
 export async function createEmptyContact() {
-  const contact = await fakeContacts.create({});
-  return contact;
+  return await fakeContacts.create({});
 }
 
 export async function getContact(id: string) {
