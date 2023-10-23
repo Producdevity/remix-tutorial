@@ -1,11 +1,7 @@
 /** @type {import("prettier").Config} */
-const config = {
+exports.module = {
   semi: false,
-  trailingComma: 'all',
+  trailingComma: "all",
   singleQuote: true,
-  plugins: [
-    '@trivago/prettier-plugin-sort-imports',
-  ]
-}
-
-export default config
+  plugins: ["@trivago/prettier-plugin-sort-imports"],
+};
